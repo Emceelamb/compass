@@ -1,0 +1,112 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  height: 100%;
+  /* padding: 0 1rem; */
+}
+
+@media (min-width: 650px) {
+  body {
+    /* padding: 0 2rem; */
+  }
+}
+
+h1 {
+  font-style: italic;
+  color: #333;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+}
+
+#mapid {
+  /* margin-top: 3em; */
+  height: 100%;
+}
+
+.glitchButton {
+  z-index: 1000;
+} /* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  height: 100%;
+  /* padding: 0 1rem; */
+}
+
+@media (min-width: 650px) {
+  body {
+    /* padding: 0 2rem; */
+  }
+}
+
+h1 {
+  font-style: italic;
+  color: #333;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+}
+
+#mapid {
+  /* margin-top: 3em; */
+  height: 100%;
+}
+
+.header {
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(200,200,200,0.66);
+    padding: 1em;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    text-align: center;
+    margin-top: 3em;
+    box-shadow: 10px 10px;
+    border: 1px solid #000;
+}
+
+input[type="text"]{
+  border: none;
+  padding: 10px;
+  opacity: 0.6;
+}
+
+
+input[type="text"]:hover{
+  opacity: 1;
+}
+
+input[type="text"]:focus{
+  border: 1px solid black;;
+  opacity: 1;
+}
+
+button {
+  border-radius:0px;
+  height:40px;
+}
+
+#compass {
+  position: absolute;
+  width:300px;
+  z-index: 999;
+  background-color: white;
+  padding: 1em;
+  bottom: 1em;
+  left: 1em;
+  box-shadow: 10px 10px #000;
+  border: 1px solid #000;
+}

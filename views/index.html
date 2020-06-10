@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Packet Compass</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import the Leaflet.js CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <!-- import socketio -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+        integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <!-- import Turf.js -->
+</head>
+
+<body>
+    <div class="header">
+        <h1>Packet Compass</h1>
+        <form id="domainSearch">
+            <input type="text" placeholder="Enter domain" name="domain" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="compass">
+      <h2>Compass</h2>
+      <p id="bear">
+        Bearing: <span id="Bear">0</span>
+        </p>
+        <p id="dist" >
+        Distance: <span id="Dist">0 km</span>
+      </p>
+    </div>
+
+    <div id="mapid"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+        integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    <script src="/outTurf.js"></script>
+</body>
+
+</html>
